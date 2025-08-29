@@ -18,8 +18,8 @@ void insert_at_front(struct Node* h){
         printf("enter element:");
         scanf("%d", el);
         new_node->data = el;
-        new_node->link = h.link;
-        h.link = new_node;
+        new_node->link = h->link;
+        h->link = new_node;
     }
 }
 
@@ -33,13 +33,13 @@ void insert_at_end(struct Node* h) {
     else {
         printf("Enter the element: \n");
         scanf("%d", &el);
-        newNode.data = el;
-        newNode.link = NULL;
+        newNode->data = el;
+        newNode->link = NULL;
         struct Node* ptr = h;
-        while (ptr.link != NULL) {
-            ptr = ptr.link;
+        while (ptr->link != NULL) {
+            ptr = ptr->link;
         }
-        ptr.link = newNode;
+        ptr->link = newNode;
     }
 }
 
@@ -125,7 +125,7 @@ void display(struct Node* h) {
 
 int main() {
     struct Node* head;
-    int i, ch=0f, pos;
+    int i, ch=0, pos;
     head = (struct Node*)malloc(sizeof(struct Node));
     if (head == NULL) {
         printf("Insufficient Memory\n");
@@ -135,7 +135,7 @@ int main() {
     }
 
     for (i = 0; i < 5; i++) {
-        insertFirst(head);
+        insert_at_front(head);
     }
     display(head);
 
