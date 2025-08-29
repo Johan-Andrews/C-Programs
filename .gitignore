@@ -1,0 +1,10 @@
+# Ignore compiled files
+*.exe
+*.out
+*.obj
+*.class
+
+# Ignore output folders
+/output
+/bin
+/build
