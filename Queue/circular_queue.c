@@ -60,7 +60,7 @@ void dequeue() {
   }
 }
 
-void main() {
+int main() {
   printf("\tMenu for Circular Queue\n1. Insert elements into the queue\n2. Delete "
          "elements from the queue\n3. Display the contents of the queue.\n");
   int ch, op, elem;
@@ -85,4 +85,5 @@ void main() {
     }
     }
   }
+  return 0;
 }
