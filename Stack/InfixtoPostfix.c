@@ -1,3 +1,5 @@
+//program for infix to postfix conversion and its evaluation. 
+
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
@@ -97,9 +99,6 @@ void main()
 for (int i=0;i<=n; i++)
     {
         c = str[i];
-        printf("output string:%s", out);
-        printf("\n%c\t", c);
-
         if (isdigit(c))
         {
             out[k] = c;
@@ -136,9 +135,7 @@ for (int i=0;i<=n; i++)
             }
         }
     }
-    printf("\noutput string:%s", out);   
+    printf("\noutput string:%s", out);
+    
     eval();
-    printf("\n");
 }
-
-

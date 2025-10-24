@@ -1,8 +1,6 @@
-
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node{
     int data;
     struct Node* next;
@@ -51,7 +49,6 @@ void display(struct Node *h){
         printf("\n");
     }   
 }
-
 void dequeue(struct Node* head)
 {
     struct Node* ptr = head->next;
@@ -63,7 +60,6 @@ void dequeue(struct Node* head)
         head->next = ptr->next;
     }
 }
-
 void main()
 {   int ch, el, n;
     struct Node* head = get_node();
